@@ -17,8 +17,8 @@ class Solution(object):
         else:
             profit = 0
         for i in range(1,n-1):
-            if (sellprices[i+1] - prices[i]) > profit:
-                profit = max(profit,sellprices[i+1] - prices[i])
+            #if (sellprices[i+1] - prices[i]) > profit:
+            profit = max(profit,sellprices[i+1] - prices[i])
         return max(0,profit)
             
                 
